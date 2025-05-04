@@ -54,3 +54,93 @@
 
 - ✅ **QA Engineer**  
   Tests backend functionality to ensure everything works as expected and meets defined quality standards.
+
+
+## 🗄️ Database Design
+
+The application follows a relational database design that connects core entities such as Users, Properties, Bookings, Reviews, and Payments. Here's a breakdown of the main models and their relationships:
+
+---
+
+- ### 👤 Users
+
+**Description**: Represents individuals using the platform. Users can list/view properties, make bookings, and leave reviews.
+
+**Fields**:
+- `id`: Primary Key
+- `name`: Full name of the user
+- `email`: Unique email address (used for login and communication)
+
+**Relationships**:
+- Can list multiple properties
+- Can make bookings
+- Can write reviews
+- Can make payments
+
+---
+
+- ### 🏠 Properties
+
+**Description**: Represents the properties listed for rent on the platform.
+
+**Fields**:
+- `id`: Primary Key
+- `name`: Property name
+- `location`: Address or geographical location
+- `rooms`: Number of rooms available
+
+**Relationships**:
+- Belongs to a user (owner)
+- Can have many bookings
+- Can have multiple reviews
+
+---
+
+- ### 📅 Bookings
+
+**Description**: Records a booking made by a user on a property.
+
+**Fields**:
+- `id`: Primary Key
+- `date`: Date of booking
+- `booked`: Boolean or status field indicating if the booking is confirmed
+
+**Relationships**:
+- Belongs to a user
+- Linked to a specific property
+
+---
+
+- ### 📝 Reviews
+
+**Description**: Feedback left by users about a property after their stay.
+
+**Fields**:
+- `id`: Primary Key
+- `title`: Short summary of the review
+- `text`: Detailed review content
+- `rating`: Numeric score (e.g., 1–5)
+- `date`: Date the review was submitted
+
+**Relationships**:
+- Belongs to a user (author)
+- Associated with a specific property
+
+---
+
+- ### 💳 Payments
+
+**Description**: Records of payments made by users when booking properties.
+
+**Fields**:
+- `id`: Primary Key
+- `date`: Payment date
+- `amount`: Total amount paid
+- `success`: Boolean flag indicating successful transaction
+
+**Relationships**:
+- Belongs to a user
+- Linked to a specific booking or property
+
+---
+
