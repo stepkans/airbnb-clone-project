@@ -144,3 +144,40 @@ The application follows a relational database design that connects core entities
 
 ---
 
+## 🚀 Feature Breakdown
+
+This project is designed to simulate a real-world property rental platform. Below is a breakdown of the core features implemented or planned:
+
+- **👤 User Management**
+  - Supports multiple user roles:
+    - Customers (can browse, book, and review properties)
+    - Hotel/Property Managers (can list and manage their properties)
+    - Administrators (manage users, listings, and platform settings)
+  - Secure authentication and authorization
+  - User profile management
+
+- **🏠 Property Management**
+  - Property owners can:
+    - Add new property listings
+    - Provide detailed descriptions (location, rooms, amenities, images, etc.)
+    - Edit or delete existing listings
+  - Customers can:
+    - Browse all available listings
+    - Filter/search by location, price, or features
+
+- **📅 Booking System**
+  - Customers can:
+    - Select preferred dates
+    - Make bookings for available properties
+    - View booking history and status
+  - Prevents double-booking and overlapping reservations
+
+- **💳 Payment Integration**
+  - Customers can:
+    - Pay for bookings via integrated payment gateway
+    - View transaction status (successful, pending, failed)
+  - Secure handling of sensitive payment data (e.g., via Stripe or other gateways)
+  - Payment confirmation tied to booking status
+
+Each feature is modularly designed to ensure easy scalability and maintainability as the project evolves.
+
