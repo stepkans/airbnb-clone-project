@@ -181,3 +181,31 @@ This project is designed to simulate a real-world property rental platform. Belo
 
 Each feature is modularly designed to ensure easy scalability and maintainability as the project evolves.
 
+
+## 🔐 API Security
+
+Ensuring secure access to the API is a top priority in this project. Below are the key security features implemented to protect user data and maintain system integrity:
+
+- **🛂 Authentication**
+  - Verifies the identity of users before allowing access to protected endpoints.
+  - Uses secure methods such as:
+    - Token-based authentication (e.g., JWT)
+    - Session authentication (if needed)
+  - Ensures that only registered and verified users can interact with the system.
+
+- **🔑 Authorization**
+  - Grants permissions to users based on their roles and authentication status.
+  - Ensures users can only perform actions they are allowed to (e.g., customers can't delete listings, managers can't alter admin data).
+  - Role-based access control (RBAC) is enforced to separate user capabilities.
+
+- **📉 Rate Limiting**
+  - Controls how frequently users can perform certain actions (e.g., submitting reviews or ratings).
+  - Helps prevent abuse, spam, and system overload.
+  - Limits are applied per user or per IP, depending on context.
+
+Additional planned features:
+- **🔒 Data Encryption** (for secure transmission)
+- **🛡️ Input Validation & Sanitization** (to prevent injection attacks)
+- **🚨 Security Logging & Alerts** (for monitoring suspicious activities)
+
+These measures collectively ensure a robust and safe API environment for all platform users.
