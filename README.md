@@ -22,3 +22,35 @@
 - **Redis**: Used for caching and session management.
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **CI/CD** Pipelines: Automated pipelines for testing and deploying code changes.
+
+## 👥 Team Roles
+
+- 🔍 **Business Analyst (BA)**  
+  Translates abstract product ideas into tangible, actionable requirements that guide development and align with business goals.
+
+- 🎯 **Product Owner (PO)**  
+  Acts as the primary decision-maker—balancing business needs and market trends. Defines the product vision, sets business strategy, manages the product backlog, and ensures the end product delivers value to users.
+
+- 📅 **Project Manager (PM)**  
+  Oversees task distribution, plans team activities, monitors progress, and ensures the project stays on schedule and within scope.
+
+- 🎨 **UI/UX Designer**  
+  Crafts user experiences that are both functional and engaging. Analyzes, designs, and continuously improves user interaction throughout the product lifecycle.
+
+- 🏗️ **Software Architect**  
+  Designs the system architecture—deciding how services, databases, and integrations work together to ensure security, scalability, and stability.
+
+- 💻 **Frontend Developer**  
+  Builds the visual and interactive parts of the app, ensuring a consistent and smooth user experience across all devices and platforms.
+
+- 🛠️ **Backend Developer**  
+  Develops server-side logic, API endpoints, and manages database interactions powering the core functionality of the application.
+
+- 🗄️ **Database Administrator**  
+  Oversees data structure, indexing, and performance tuning to maintain data reliability and efficiency.
+
+- 🚀 **DevOps Engineer**  
+  Manages deployment pipelines, automates infrastructure, and ensures systems are monitored, scalable, and resilient.
+
+- ✅ **QA Engineer**  
+  Tests backend functionality to ensure everything works as expected and meets defined quality standards.
