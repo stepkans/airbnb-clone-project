@@ -209,3 +209,59 @@ Additional planned features:
 - **🚨 Security Logging & Alerts** (for monitoring suspicious activities)
 
 These measures collectively ensure a robust and safe API environment for all platform users.
+
+## 🔁 CI/CD Pipeline
+
+### Objective
+To implement and understand how Continuous Integration and Continuous Deployment (CI/CD) pipelines enhance the software development lifecycle by automating testing, building, and deployment processes.
+
+### What is a CI/CD Pipeline?
+
+CI/CD pipelines are automated workflows that help streamline software development by:
+
+- **Continuous Integration (CI):**
+  - Automatically integrating and testing code changes from multiple contributors into a shared repository.
+  - Ensures that every code push is tested and verified, reducing integration issues and bugs.
+
+- **Continuous Deployment (CD):**
+  - Automatically deploying verified code changes to staging or production environments.
+  - Reduces manual intervention, speeds up release cycles, and ensures reliable delivery.
+
+### Why It’s Important for This Project
+
+Implementing a CI/CD pipeline provides several key benefits:
+
+- Increases development efficiency and speed
+- Catches bugs early through automated testing
+- Reduces the risk of human error during deployments
+- Makes collaboration and code merging smoother
+- Supports consistent and reliable delivery to users
+
+### Potential Tools & Technologies
+
+Below are tools that can be integrated to create a functional CI/CD pipeline for this project:
+
+- **GitHub Actions**  
+  Automates workflows such as running tests, building the app, and deploying it to production directly from the GitHub repository.
+
+- **Docker**  
+  Containerizes the application to ensure consistent development, testing, and deployment environments.
+
+- **Docker Compose**  
+  Helps manage multi-container setups for running services like web app, database, etc.
+
+- **Heroku / Render / AWS / DigitalOcean**  
+  Platforms for hosting and deploying the application.
+
+- **PostgreSQL**  
+  Reliable database that can be integrated into the deployment pipeline for schema management and migrations.
+
+- **pytest / unittest / Django Test Suite**  
+  For running automated backend tests during the CI process.
+
+---
+
+In the future, the pipeline can be extended with features like:
+- Code linting and style checks
+- Notification integration (e.g., Slack alerts on failed builds)
+- Rollback support on failed deployments
